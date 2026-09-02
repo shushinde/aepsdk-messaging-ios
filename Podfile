@@ -16,13 +16,14 @@ pod 'SwiftLint', '0.52.0'
 
 $dev_repo = 'https://github.com/sbenedicadb/aepsdk-core-ios.git'
 $dev_branch = 'dev-v5.5.0'
+$core_local = '../aepsdk-core-ios'
 
 # ==================
 # SHARED POD GROUPS
 # ==================
 def lib_main
-    pod 'AEPCore'
-    pod 'AEPServices'
+    pod 'AEPCore', :path => '../aepsdk-core-ios'
+    pod 'AEPServices', :path => '../aepsdk-core-ios'
     pod 'AEPRulesEngine'
 end
 

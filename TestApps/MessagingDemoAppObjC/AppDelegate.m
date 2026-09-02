@@ -42,7 +42,7 @@
     ];
     
     [AEPMobileCore registerExtensions:extensions completion:^{
-        // [AEPMobileAssurance startSessionWithUrl:[NSURL URLWithString:@""]];
+         [AEPMobileAssurance startSessionWithUrl:[NSURL URLWithString:@""]];
     }];
     
     [AEPMobileCore configureWithAppId:@""];
