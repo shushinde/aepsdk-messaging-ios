@@ -26,14 +26,14 @@ jobs:
 
   functional-test:
     # The type of runner that the job will run on
-    runs-on: macos-15
+    runs-on: macos-26
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     
       - uses: maxim-lobanov/setup-xcode@60606e260d2fc5762a71e64e74b2174e8ea3c8bd # v1.6.0
         with:
-          xcode-version: '16.4.0'
+          xcode-version: '26.0'
 
       - name: Download iOS Simulator
         run: |
